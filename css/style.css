@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* EYELOGO SIMPLE DESIGN */
+#eye{
+    color: orange;
+    font-size: 30px;
+}
+#care{
+    color:var(--color-primary) ;
+    font-style: italic;
+}
+
+/* VARIABLES TO USE ON MY SITE hOMEPAGE */
+:root{
+    --color-primary: blue;
+    --color-bacground:rgb(49, 49, 58);
+    --color-bar:white;
+    --color-link:red;
+    --transition: all 400ms ease;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--color-bar);
+    background-color: rgb(0, 0, 0);
+
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.btn{
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    margin-left: 40px;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight:500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: transparent;
+    border-color: var(--color-bar);
+    color: var(--color-bar);
+}
+
+/* NAVBAR CSS STYLING */
+
+nav{
+    background-color: transparent;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    text-align: left;
+    top: 0; 
+    display: flex;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h4 a{
+    margin-left: 10px;
+    color: var(--color-primary);
+    text-decoration: none;
+    padding-right: 100px; 
+    
+   
+}
+
+nav ul li{
+    display: inline;
+    padding:0px;
+    margin-left: 40px;
+    
+}
+nav ul li a{
+    display: inline;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--color-bar);
+    cursor: pointer;
+    transition: all 500ms ease;
+
+}
+nav ul li a:hover{
+    color: blue;
+}
+
+/* HEADER STYLING */
+header{
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 3rem;
+
+}
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 5rem;
+    height: 100%;
+
+}
+.header_left p{
+   margin: 1rem 0 2.4rem ; 
+}
